@@ -22,6 +22,12 @@ export default function Footer() {
         >
           Download
         </Button>
+        <Typography
+          style={{ position: 'absolute', bottom: 50 }}
+          variant='caption'
+        >
+          © 2020 by bkasperski.pl
+        </Typography>
       </div>
     </React.Fragment>
   )
