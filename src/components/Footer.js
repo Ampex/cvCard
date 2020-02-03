@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <React.Fragment>
       <div>
-        <Typography variant='h4'>Would you like to check my CV?</Typography>
+        <Typography variant='h4'>Would you like to view my CV?</Typography>
         <Typography variant='inherit'>{`Just confirm that you are not a robot, and you are free to download ;)`}</Typography>
         <Switch onChange={() => setCheck(!isCheck)} value={isCheck} />
         <Button
