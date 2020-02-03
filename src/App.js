@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles'
+import './App.css'
+import Header from './components/Header'
+import Skills from './components/Skills'
+import JobHistory from './components/JobHistory'
+import Footer from './components/Footer'
 
-function App() {
+const theme = createMuiTheme({
+  typography: {
+    fontFamily: ['Poppins']
+  },
+  palette: {
+    primary: {
+      main: '#1a213a'
+    }
+  }
+})
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <ThemeProvider theme={theme}>
+      <div className='container'>
+        <Header />
+        <Skills />
+        <JobHistory />
+        <Footer />
+      </div>
+    </ThemeProvider>
+  )
 }
-
-export default App;

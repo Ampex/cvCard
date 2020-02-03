@@ -1,38 +1,36 @@
-.App {
-  text-align: center;
+.container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.jobList {
+    font-family: 'Poppins', sans-serif !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container>div {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container>div>div {
+    width: 800px;
 }
 
-.App-link {
-  color: #61dafb;
+.icons {
+    display: flex;
+    justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container>div:nth-child(odd) {
+    background-color: #f6f6f6;
+
+}
+
+h4 {
+    font-family: 'Jura', sans-serif !important;
 }
