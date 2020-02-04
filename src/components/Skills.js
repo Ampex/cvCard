@@ -13,7 +13,7 @@ const skillItems = [
   { title: 'CSS, SASS', number: 80 },
   { title: 'Material UI, other UIs', number: 80 }
 ].map((item, index) => (
-  <div style={{ margin: '15px 0' }} key={index}>
+  <div style={{ margin: '15px 0', width: '100%' }} key={index}>
     <div>{item.title}</div>
     <LinearProgress value={item.number} variant='determinate' />
   </div>
@@ -22,8 +22,10 @@ const skillItems = [
 export default function Skills() {
   return (
     <div>
-      <Typography variant='h4'>Skills</Typography>
-      {skillItems}
+      <div>
+        <Typography variant='h4'>Skills</Typography>
+        {skillItems}
+      </div>
     </div>
   )
 }

@@ -1,36 +1,52 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Poppins', sans-serif;
+@media only screen and (max-width: 768px) {
+  .container>div>div {
+    text-align: center !important;
+  }
+
+  .footer h4 {
+    margin: 15px 0 !important;
+  }
+
+  .container>div>div {
+    padding: 25px !important;
+  }
 }
 
-.jobList {
-    font-family: 'Poppins', sans-serif !important;
+.container {
+  display: flex;
+  flex-direction: column;
 }
 
 .container>div {
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 
-.container>div>div {
-    width: 800px;
-}
-
-.icons {
-    display: flex;
-    justify-content: center;
 }
 
 .container>div:nth-child(odd) {
-    background-color: #f6f6f6;
+  background-color: #f6f6f6;
+}
 
+.container>div>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+  padding: 45px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer>* {
+  margin: 20px 0
 }
 
 h4 {
-    font-family: 'Jura', sans-serif !important;
+  font-family: 'Jura', sans-serif !important;
+}
+
+h6 {
+  display: flex;
+  align-items: center;
 }

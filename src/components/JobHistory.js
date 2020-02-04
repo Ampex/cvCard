@@ -66,10 +66,12 @@ const jobList = jobs.map((job, index) => (
 export default function JobHistory() {
   return (
     <div>
-      <Typography style={{ marginBottom: 15 }} variant='h4'>
-        Job History
-      </Typography>
-      {jobList}
+      <div>
+        <Typography style={{ marginBottom: 15 }} variant='h4'>
+          Job History
+        </Typography>
+        {jobList}
+      </div>
     </div>
   )
 }

@@ -33,20 +33,22 @@ const icons = [
 ))
 
 const fullName = 'Błażej Kasperski'
-const description = 'Junior Frontend Developer'
+const description = 'Frontend Developer'
 
 export default function Header() {
   const classes = useStyles()
   return (
     <div>
-      <Avatar className={classes.avatar} alt='Błażej Kasperski' src={img} />
-      <Typography className={classes.font} variant='h3'>
-        {fullName}
-      </Typography>
-      <Typography className={classes.font} variant='h6'>
-        {description}
-      </Typography>
-      <div className='icons'>{icons}</div>
+      <div>
+        <Avatar className={classes.avatar} alt='Błażej Kasperski' src={img} />
+        <Typography className={classes.font} variant='h3'>
+          {fullName}
+        </Typography>
+        <Typography className={classes.font} variant='h6'>
+          {description}
+        </Typography>
+        <div className='icons'>{icons}</div>
+      </div>
     </div>
   )
 }

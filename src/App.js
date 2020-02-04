@@ -7,6 +7,13 @@ import JobHistory from './components/JobHistory'
 import Footer from './components/Footer'
 
 const theme = createMuiTheme({
+  overrides: {
+    MuiTypography: {
+      root: {
+        color: '#1a213a'
+      }
+    }
+  },
   typography: {
     fontFamily: ['Poppins']
   },
