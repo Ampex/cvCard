@@ -3,10 +3,6 @@
     text-align: center !important;
   }
 
-  .footer h4 {
-    margin: 15px 0 !important;
-  }
-
   .container>div>div {
     padding: 25px !important;
   }
@@ -39,7 +35,7 @@
 }
 
 .footer>* {
-  margin: 20px 0
+  margin: 10px 0 !important
 }
 
 h4 {

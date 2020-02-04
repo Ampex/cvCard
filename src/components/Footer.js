@@ -1,11 +1,19 @@
 import React, { useState } from 'react'
-import { Button, Typography, Switch, CircularProgress } from '@material-ui/core'
-
+import {
+  Button,
+  Typography,
+  Switch,
+  CircularProgress,
+  Grow
+} from '@material-ui/core'
+import Alert from '@material-ui/lab/Alert'
 export default function Footer() {
   const [isCheck, setCheck] = useState({
     check: false,
-    loading: false
+    loading: false,
+    isClicked: false
   })
+  const [isClick, setClick] = useState(false)
 
   const handleChange = () => {
     if (!isCheck.check) {
@@ -17,7 +25,7 @@ export default function Footer() {
         })
       }, 1200)
     } else {
-      setCheck({ check: false, loading: false })
+      setCheck({ check: false, loading: false, isClicked: false })
     }
   }
 
@@ -40,6 +48,7 @@ export default function Footer() {
           color='primary'
           disabled={!isCheck.check}
           size='large'
+          onClick={() => setClick(true)}
         >
           Download
           {isCheck.loading && (
@@ -51,11 +60,14 @@ export default function Footer() {
           )}
         </Button>
         <Typography
-          style={{ position: 'absolute', bottom: 50 }}
+          style={{ position: 'absolute', bottom: 20 }}
           variant='caption'
         >
           © 2020 by bkasperski.pl
         </Typography>
+        <Grow in={isCheck.check && isClick}>
+          <Alert style={{ marginTop: 50 }}>Thanks, hope you like it!</Alert>
+        </Grow>
       </div>
     </div>
   )
