@@ -23,6 +23,7 @@ export default function Footer() {
           check: !isCheck.check,
           loading: isCheck.loading
         })
+        setClick(false)
       }, 1200)
     } else {
       setCheck({ check: false, loading: false, isClicked: false })
