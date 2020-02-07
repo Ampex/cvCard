@@ -44,18 +44,19 @@ export default function Header() {
     setTimeout(() => (target.className = ''), 1000)
   }
 
-  const fullName = 'Błażej Kasperski'.split('').map((letter, index) => (
-    <span className='' onMouseEnter={handleEnter} key={index}>
+  const fullName = 'Błażej Kasperski'
+  const fullNameAnim = [...fullName].map((letter, index) => (
+    <div className='' onMouseEnter={handleEnter} key={index}>
       {letter}
-    </span>
+    </div>
   ))
 
   return (
-    <div className='child'>
+    <div id='header'>
       <div>
-        <Avatar className={classes.avatar} alt='Błażej Kasperski' src={img} />
+        <Avatar className={classes.avatar} alt={fullName} src={img} />
         <Typography className={classes.font} variant='h3'>
-          {fullName}
+          {fullNameAnim}
         </Typography>
         <Typography className={classes.font} variant='h6'>
           <ReactTypingEffect speed={100} text={description} />

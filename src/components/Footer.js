@@ -30,8 +30,8 @@ export default function Footer() {
   }
 
   return (
-    <div className='child'>
-      <div className='footer'>
+    <div id='footer'>
+      <div>
         <Typography variant='h4'>Would you like to view my CV?</Typography>
         <Typography variant='inherit'>{`Just confirm that you are not a robot, and you are free to download ;)`}</Typography>
         <Switch
@@ -66,7 +66,14 @@ export default function Footer() {
           © 2020 by bkasperski.pl
         </Typography>
         <Grow in={isCheck.check && isClick}>
-          <Alert style={{ marginTop: 50 }}>Thanks, hope you like it!</Alert>
+          <Alert
+            style={{
+              marginTop: 50,
+              boxShadow: '0 16px 32px 0 rgba(0,31,109,0.08)'
+            }}
+          >
+            Thanks, hope you like it!
+          </Alert>
         </Grow>
       </div>
     </div>

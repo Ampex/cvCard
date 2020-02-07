@@ -1,6 +1,7 @@
 import React from 'react'
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 import './App.css'
+import Bar from './components/Bar'
 import Header from './components/Header'
 import Skills from './components/Skills'
 import JobHistory from './components/JobHistory'
@@ -28,6 +29,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <div className='container'>
+        <Bar />
         <Header />
         <Skills />
         <JobHistory />
