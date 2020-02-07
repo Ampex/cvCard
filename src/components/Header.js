@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactTypingEffect from 'react-typing-effect'
 import { makeStyles } from '@material-ui/core/styles'
 import img from './media/bkasperski.jpg'
 import { Avatar, Typography, IconButton } from '@material-ui/core'
@@ -32,20 +33,32 @@ const icons = [
   </IconButton>
 ))
 
-const fullName = 'Błażej Kasperski'
-const description = 'Frontend Developer'
+const description = 'I am, Frontend Developer'
 
 export default function Header() {
   const classes = useStyles()
+
+  const handleEnter = e => {
+    const target = e.target
+    target.className = 'hover'
+    setTimeout(() => (target.className = ''), 1000)
+  }
+
+  const fullName = 'Błażej Kasperski'.split('').map((letter, index) => (
+    <span className='' onMouseEnter={handleEnter} key={index}>
+      {letter}
+    </span>
+  ))
+
   return (
-    <div>
+    <div className='child'>
       <div>
         <Avatar className={classes.avatar} alt='Błażej Kasperski' src={img} />
         <Typography className={classes.font} variant='h3'>
           {fullName}
         </Typography>
         <Typography className={classes.font} variant='h6'>
-          {description}
+          <ReactTypingEffect speed={100} text={description} />
         </Typography>
         <div className='icons'>{icons}</div>
       </div>

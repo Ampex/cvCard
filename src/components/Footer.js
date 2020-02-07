@@ -30,7 +30,7 @@ export default function Footer() {
   }
 
   return (
-    <div>
+    <div className='child'>
       <div className='footer'>
         <Typography variant='h4'>Would you like to view my CV?</Typography>
         <Typography variant='inherit'>{`Just confirm that you are not a robot, and you are free to download ;)`}</Typography>
@@ -60,7 +60,7 @@ export default function Footer() {
           )}
         </Button>
         <Typography
-          style={{ position: 'absolute', bottom: 20 }}
+          style={{ position: 'absolute', bottom: '2%' }}
           variant='caption'
         >
           © 2020 by bkasperski.pl

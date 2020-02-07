@@ -11,6 +11,7 @@
 .container {
   display: flex;
   flex-direction: column;
+  scroll-snap-type: none;
 }
 
 .container>div {
@@ -18,7 +19,7 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-
+  scroll-snap-align: start;
 }
 
 .container>div:nth-child(odd) {
@@ -35,7 +36,7 @@
 }
 
 .footer>* {
-  margin: 10px 0 !important
+  margin: 10px 0 !important;
 }
 
 h4 {
@@ -45,4 +46,58 @@ h4 {
 h6 {
   display: flex;
   align-items: center;
+}
+
+.hover {
+  animation: letter 0.9s both
+}
+
+.container>div>div>h3>span {
+  display: inline-block;
+}
+
+@keyframes letter {
+
+  0%,
+  100% {
+    transform: scale3d(1, 1, 1);
+    color: inherit;
+    transform-origin: bottom;
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+    color: #f50057;
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+}
+
+.anim:hover {
+  animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+
+}
+
+@keyframes anim {
+  0% {
+    transform: rotateX(0);
+  }
+
+  100% {
+    transform: rotateX(-180deg);
+  }
 }

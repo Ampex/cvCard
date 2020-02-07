@@ -21,7 +21,7 @@ const skillItems = [
 
 export default function Skills() {
   return (
-    <div>
+    <div className='child'>
       <div>
         <Typography variant='h4'>Skills</Typography>
         {skillItems}
