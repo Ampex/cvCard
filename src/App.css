@@ -1,6 +1,24 @@
-@media only screen and (max-width: 768px) {
-  ul {
-    display: none !important;
+@media only screen and (max-width: 650px) {
+
+  .container>ul {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+    align-items: center;
+    margin: 0 !important;
+    padding: 0 !important;
+    z-index: 5;
+    right: inherit;
+    top: inherit !important;
+    bottom: 0;
+    background-color: #fff;
+    width: 100vw;
+    height: 75px;
+    box-shadow: 0 -16px 40px 0 rgba(0, 0, 0, 0.15) !important
+  }
+
+  .container>ul>ol {
+    padding: 0 !important;
   }
 
   .container>div>div {
@@ -28,6 +46,21 @@
   scroll-behavior: smooth;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1a213a;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -52,6 +85,14 @@
   width: 800px;
   padding: 45px;
   font-family: 'Poppins', sans-serif;
+}
+
+#header>div>div>img {
+  filter: grayscale(100%);
+}
+
+#header>div>div>img:hover {
+  filter: grayscale(0%);
 }
 
 .footer>* {

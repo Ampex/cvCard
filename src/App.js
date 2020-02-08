@@ -6,12 +6,24 @@ import Header from './components/Header'
 import Skills from './components/Skills'
 import JobHistory from './components/JobHistory'
 import Footer from './components/Footer'
+import { dark } from '@material-ui/core/styles/createPalette'
+
+const globalColor = '#1a213a'
 
 const theme = createMuiTheme({
   overrides: {
     MuiTypography: {
       root: {
-        color: '#1a213a'
+        color: globalColor
+      }
+    },
+    MuiTooltip: {
+      tooltip: {
+        backgroundColor: globalColor,
+        fontSize: 14
+      },
+      arrow: {
+        color: globalColor
       }
     }
   },
@@ -19,8 +31,9 @@ const theme = createMuiTheme({
     fontFamily: ['Poppins']
   },
   palette: {
+    type: 'light',
     primary: {
-      main: '#1a213a'
+      main: globalColor
     }
   }
 })

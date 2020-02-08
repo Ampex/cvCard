@@ -10,9 +10,7 @@ import GitHubIcon from '@material-ui/icons/GitHub'
 const useStyles = makeStyles({
   avatar: {
     width: '200px !important',
-    height: '200px !important',
-    WebkitFilter: 'grayscale(100%)',
-    filter: 'grayscale(100%)'
+    height: '200px !important'
   },
   font: { fontFamily: 'Jura, sans-serif', marginBottom: 10 },
   progress: {

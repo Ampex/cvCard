@@ -33,8 +33,14 @@ export default function Footer() {
   return (
     <div id='footer'>
       <div>
+        <Typography style={{ marginBottom: 80 }} variant='h4'>
+          Curriculum Vitae
+        </Typography>
         <Typography variant='h4'>Would you like to view my CV?</Typography>
-        <Typography variant='inherit'>{`Just confirm that you are not a robot, and you are free to download ;)`}</Typography>
+        <Typography
+          style={{ marginBottom: 25 }}
+          variant='inherit'
+        >{`Just confirm that you are not a robot, and you are free to download ;)`}</Typography>
         <Switch
           disabled={isCheck.loading}
           onChange={handleChange}
@@ -50,6 +56,7 @@ export default function Footer() {
           disabled={!isCheck.check}
           size='large'
           onClick={() => setClick(true)}
+          style={{ marginTop: 25 }}
         >
           Download
           {isCheck.loading && (
@@ -60,12 +67,6 @@ export default function Footer() {
             />
           )}
         </Button>
-        <Typography
-          style={{ position: 'absolute', bottom: '2%' }}
-          variant='caption'
-        >
-          © 2020 by bkasperski.pl
-        </Typography>
         <Grow in={isCheck.check && isClick}>
           <Alert
             style={{
