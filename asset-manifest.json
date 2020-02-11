@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/cvCard/static/css/main.1255790c.chunk.css",
-    "main.js": "/cvCard/static/js/main.50abc371.chunk.js",
-    "main.js.map": "/cvCard/static/js/main.50abc371.chunk.js.map",
+    "main.js": "/cvCard/static/js/main.56c62308.chunk.js",
+    "main.js.map": "/cvCard/static/js/main.56c62308.chunk.js.map",
     "runtime-main.js": "/cvCard/static/js/runtime-main.d66884cc.js",
     "runtime-main.js.map": "/cvCard/static/js/runtime-main.d66884cc.js.map",
     "static/js/2.6bd4cd49.chunk.js": "/cvCard/static/js/2.6bd4cd49.chunk.js",
     "static/js/2.6bd4cd49.chunk.js.map": "/cvCard/static/js/2.6bd4cd49.chunk.js.map",
     "index.html": "/cvCard/index.html",
-    "precache-manifest.32f367c874cd0e78b50bca2d975b53e4.js": "/cvCard/precache-manifest.32f367c874cd0e78b50bca2d975b53e4.js",
+    "precache-manifest.44dc4dc3be3db6dbe943e96fd26e7352.js": "/cvCard/precache-manifest.44dc4dc3be3db6dbe943e96fd26e7352.js",
     "service-worker.js": "/cvCard/service-worker.js",
     "static/css/main.1255790c.chunk.css.map": "/cvCard/static/css/main.1255790c.chunk.css.map",
     "static/js/2.6bd4cd49.chunk.js.LICENSE.txt": "/cvCard/static/js/2.6bd4cd49.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.d66884cc.js",
     "static/js/2.6bd4cd49.chunk.js",
     "static/css/main.1255790c.chunk.css",
-    "static/js/main.50abc371.chunk.js"
+    "static/js/main.56c62308.chunk.js"
   ]
 }
