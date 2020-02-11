@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "12377ada444fece604114db22346e913",
+    "revision": "accf720e6672225ef7db6a9a6403063f",
     "url": "/cvCard/index.html"
   },
   {
