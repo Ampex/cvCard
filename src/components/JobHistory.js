@@ -65,7 +65,7 @@ const jobList = jobs.map((job, index) => (
 
 export default function JobHistory() {
   return (
-    <div id='jobHistory'>
+    <div id='job History'>
       <div>
         <Typography style={{ marginBottom: 15 }} variant='h4'>
           Job History
