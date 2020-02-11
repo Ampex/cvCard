@@ -31,7 +31,7 @@ const icons = [
   </IconButton>
 ))
 
-const description = 'I am, Frontend Developer'
+const description = 'I am a Frontend Developer'
 
 export default function Header() {
   const classes = useStyles()

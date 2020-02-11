@@ -18,6 +18,8 @@
   }
 
   .container>ul>ol {
+    display: flex;
+    flex-direction: column;
     padding: 0 !important;
   }
 
@@ -46,7 +48,7 @@
   scroll-behavior: smooth;
 }
 
-/* width */
+/* Width */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -87,11 +89,12 @@
   font-family: 'Poppins', sans-serif;
 }
 
-#header>div>div>img {
+#header>div>div:first-child {
   filter: grayscale(100%);
+  box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, .2)
 }
 
-#header>div>div>img:hover {
+#header>div>div:hover {
   filter: grayscale(0%);
 }
 
@@ -109,9 +112,10 @@ h6 {
 }
 
 ul {
+  height: 100%;
   right: 0;
-  margin: -95px 15px 0 0;
-  top: 50%;
+  justify-content: center;
+  margin: 0 25px;
   position: fixed;
   display: flex;
   flex-direction: column;

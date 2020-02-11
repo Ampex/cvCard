@@ -6,10 +6,8 @@ import Header from './components/Header'
 import Skills from './components/Skills'
 import JobHistory from './components/JobHistory'
 import Footer from './components/Footer'
-import { dark } from '@material-ui/core/styles/createPalette'
 
 const globalColor = '#1a213a'
-
 const theme = createMuiTheme({
   overrides: {
     MuiTypography: {
@@ -31,14 +29,13 @@ const theme = createMuiTheme({
     fontFamily: ['Poppins']
   },
   palette: {
-    type: 'light',
     primary: {
       main: globalColor
     }
   }
 })
 
-export default function App() {
+const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <div className='container'>
@@ -51,3 +48,5 @@ export default function App() {
     </ThemeProvider>
   )
 }
+
+export default App

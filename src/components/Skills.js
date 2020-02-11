@@ -7,6 +7,7 @@ const skillItems = [
   { title: 'React Router', number: 60 },
   { title: 'Node.js', number: 20 },
   { title: 'Git', number: 50 },
+  { title: 'PWA', number: 40 },
   { title: 'HTML', number: 60 },
   { title: 'REST API', number: 60 },
   { title: 'CSS, SASS', number: 80 },
