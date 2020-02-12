@@ -40,7 +40,7 @@ const theme = createMuiTheme({
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
-      <Fade timeout={1200} in>
+      <Fade in={true} timeout={1200}>
         <div className='container'>
           <Bar />
           <Header />
