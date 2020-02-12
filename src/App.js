@@ -7,6 +7,8 @@ import Skills from './components/Skills'
 import JobHistory from './components/JobHistory'
 import Footer from './components/Footer'
 
+import Fade from '@material-ui/core/Fade'
+
 const globalColor = '#1a213a'
 const theme = createMuiTheme({
   overrides: {
@@ -38,13 +40,15 @@ const theme = createMuiTheme({
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
-      <div className='container'>
-        <Bar />
-        <Header />
-        <Skills />
-        <JobHistory />
-        <Footer />
-      </div>
+      <Fade timeout={1200} in>
+        <div className='container'>
+          <Bar />
+          <Header />
+          <Skills />
+          <JobHistory />
+          <Footer />
+        </div>
+      </Fade>
     </ThemeProvider>
   )
 }
