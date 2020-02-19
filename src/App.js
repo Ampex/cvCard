@@ -1,6 +1,7 @@
 import React from 'react'
 import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 import './App.css'
+import Cookies from './components/Cookies'
 import Bar from './components/Bar'
 import Header from './components/Header'
 import Skills from './components/Skills'
@@ -42,6 +43,7 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <Fade in={true} timeout={1200}>
         <div className='container'>
+          <Cookies />
           <Bar />
           <Header />
           <Skills />
