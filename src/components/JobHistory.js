@@ -11,6 +11,13 @@ import {
 
 const jobs = [
   {
+    title: 'Frontend Web Developer',
+    company: 'Avrio Interactive',
+    description:
+      'Developing HTML RWD templates for websites based on unique graphic designs for our clients. Combining RWD templates with a proprietary CMS application together with a team responsible for back-end. Programming the front-end layer using JavaScript and React.js',
+    from: 'April 2020'
+  },
+  {
     title: 'Junior Frontend Developer',
     company: 'SteaMaster Prasowacze Parowe',
     description:
@@ -30,13 +37,6 @@ const jobs = [
     description:
       'Visualization of Vancouver city sectors, modeling, mapping and texturing infrastructure of the city, creating modular item assets for real time engine. Preparing LOD, and baking textures.',
     from: 'February 2012'
-  },
-  {
-    title: '2D/3D Artist',
-    company: 'M&P Studio',
-    description:
-      'Designing 3D graphics. Company visualization through rendering of 3D objects. Composition of 2D and 3D materials. 2D and 3D animation, preparation of advertising spots.',
-    from: 'January 2011'
   }
 ]
 
