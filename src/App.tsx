@@ -41,7 +41,7 @@ export default function App() {
                   <Avatar
                     bordered
                     color="gradient"
-                    src="/bkasperski.jpg"
+                    src="bkasperski.jpg"
                     css={{ size: 180 }}
                   />
                 </Tooltip>
