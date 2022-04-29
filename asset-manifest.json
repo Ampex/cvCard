@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/cvCard/static/css/main.f79078a6.css",
-    "main.js": "/cvCard/static/js/main.d4318664.js",
+    "main.js": "/cvCard/static/js/main.5b235060.js",
     "static/js/787.1da79535.chunk.js": "/cvCard/static/js/787.1da79535.chunk.js",
     "index.html": "/cvCard/index.html",
     "main.f79078a6.css.map": "/cvCard/static/css/main.f79078a6.css.map",
-    "main.d4318664.js.map": "/cvCard/static/js/main.d4318664.js.map",
+    "main.5b235060.js.map": "/cvCard/static/js/main.5b235060.js.map",
     "787.1da79535.chunk.js.map": "/cvCard/static/js/787.1da79535.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f79078a6.css",
-    "static/js/main.d4318664.js"
+    "static/js/main.5b235060.js"
   ]
 }
