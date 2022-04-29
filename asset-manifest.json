@@ -1,23 +1,15 @@
 {
   "files": {
-    "main.css": "/cvCard/static/css/main.f8fe508f.chunk.css",
-    "main.js": "/cvCard/static/js/main.688d5388.chunk.js",
-    "main.js.map": "/cvCard/static/js/main.688d5388.chunk.js.map",
-    "runtime-main.js": "/cvCard/static/js/runtime-main.d66884cc.js",
-    "runtime-main.js.map": "/cvCard/static/js/runtime-main.d66884cc.js.map",
-    "static/js/2.7dd40cde.chunk.js": "/cvCard/static/js/2.7dd40cde.chunk.js",
-    "static/js/2.7dd40cde.chunk.js.map": "/cvCard/static/js/2.7dd40cde.chunk.js.map",
+    "main.css": "/cvCard/static/css/main.f79078a6.css",
+    "main.js": "/cvCard/static/js/main.d4318664.js",
+    "static/js/787.1da79535.chunk.js": "/cvCard/static/js/787.1da79535.chunk.js",
     "index.html": "/cvCard/index.html",
-    "precache-manifest.352eb910ebc76c3992f5319a190fce79.js": "/cvCard/precache-manifest.352eb910ebc76c3992f5319a190fce79.js",
-    "service-worker.js": "/cvCard/service-worker.js",
-    "static/css/main.f8fe508f.chunk.css.map": "/cvCard/static/css/main.f8fe508f.chunk.css.map",
-    "static/js/2.7dd40cde.chunk.js.LICENSE.txt": "/cvCard/static/js/2.7dd40cde.chunk.js.LICENSE.txt",
-    "static/media/bkasperski.jpg": "/cvCard/static/media/bkasperski.a393f900.jpg"
+    "main.f79078a6.css.map": "/cvCard/static/css/main.f79078a6.css.map",
+    "main.d4318664.js.map": "/cvCard/static/js/main.d4318664.js.map",
+    "787.1da79535.chunk.js.map": "/cvCard/static/js/787.1da79535.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.d66884cc.js",
-    "static/js/2.7dd40cde.chunk.js",
-    "static/css/main.f8fe508f.chunk.css",
-    "static/js/main.688d5388.chunk.js"
+    "static/css/main.f79078a6.css",
+    "static/js/main.d4318664.js"
   ]
 }
