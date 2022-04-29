@@ -41,7 +41,7 @@ export default function App() {
                   <Avatar
                     bordered
                     color="gradient"
-                    src="https://ampex.github.io/cvCard/static/media/bkasperski.a393f900.jpg"
+                    src="/bkasperski.jpg"
                     css={{ size: 180 }}
                   />
                 </Tooltip>
