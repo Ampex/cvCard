@@ -1,26 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Home from "./components/Home"
+import Section from "./components/Section"
+import { theme } from "./config"
+import { ThemeProvider } from "@mui/system"
+import { MotionConfig } from "framer-motion"
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <ThemeProvider theme={theme}>
+      <MotionConfig transition={{ ease: "easeOut", duration: 1 }}>
+        <Home />
+        <Section title="Skills" />
+        <Section title="Project" right />
+      </MotionConfig>
+    </ThemeProvider>
+  )
 }
-
-export default App;

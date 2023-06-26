@@ -1,13 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700;800&display=swap");
+
 body {
+  box-sizing: border-box;
+  font-family: "Baloo 2";
+  color: #3f0962;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+section {
+  min-height: 100vh;
+}
+
+section:nth-of-type(odd) {
+  background: #f0f0f0;
 }
