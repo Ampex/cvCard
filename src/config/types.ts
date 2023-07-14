@@ -14,6 +14,7 @@ type SectionConditionalProps = {
 
 export type ProjectProps = {
   src: string
+  href: string
   title: string
   description: string
 }

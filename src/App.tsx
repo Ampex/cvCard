@@ -55,18 +55,21 @@ export default function App() {
         >
           <Content>
             <Project
+              src="loans"
               title="HSBC M&S Loans"
-              src="https://bank.marksandspencer.com/personal-loans/"
+              href="https://bank.marksandspencer.com/personal-loans/"
               description="An application for borrowing money from bank. Manufactured spending (MS) is the process of purchasing cash equivalents with a rewards earning credit card."
             />
             <Project
+              src="cards"
               title="HSBC M&S Cards"
-              src="https://bank.marksandspencer.com/credit-card/"
+              href="https://bank.marksandspencer.com/credit-card/"
               description="An application for credit cards ordering. With an M&S Credit Card you will earn rewards points every time you shop."
             />
             <Project
+              src="ose"
               title="Ose"
-              src="https://ose.gov.pl/"
+              href="https://ose.gov.pl/"
               description="OSE is a public telecommunications network program that gives schools across Poland the opportunity to connect to fast, free and secure network."
             />
           </Content>

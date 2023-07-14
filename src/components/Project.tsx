@@ -1,8 +1,8 @@
 import { Card, CardActionArea, CardMedia, CardContent, Typography } from "@mui/material"
 import { ProjectProps } from "config/types"
 
-export default function Project({ src, title, description }: ProjectProps) {
-  const onClick = () => window.open(src)
+export default function Project({ src, href, title, description }: ProjectProps) {
+  const onClick = () => window.open(href)
 
   return (
     <Card className="box-shadow" sx={{ maxWidth: 345, background: "#f6f6f6" }} onClick={onClick}>
@@ -10,7 +10,7 @@ export default function Project({ src, title, description }: ProjectProps) {
         <CardMedia
           component="img"
           height="140"
-          image={`${window.location.href}/image/projects/${title.toLowerCase()}.png`}
+          src={`${window.location.href}/image/projects/${src}.png`}
           alt={title}
         />
         <CardContent>
