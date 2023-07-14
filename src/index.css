@@ -15,6 +15,7 @@ body {
 
 section:nth-of-type(odd) {
   background: #f6f6f6;
+  /* overflow: hidden; */
 }
 
 .box-shadow {

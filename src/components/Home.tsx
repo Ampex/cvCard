@@ -1,9 +1,10 @@
 import { Grid, Typography, CSSObject, Fade, Button, Container } from "@mui/material"
-import { motion } from "framer-motion"
-import Content from "./Wrappers/Content"
 import { Link } from "react-scroll"
+import useMedia from "./hooks"
+import Content from "./Wrappers/Content"
 
 export default function Home() {
+  const { isMobile } = useMedia()
   const customStyles: CSSObject = {
     height: "100vh",
     background: "url('image/yellow.svg')",
@@ -15,15 +16,21 @@ export default function Home() {
     <Fade in>
       <Grid id="home" sx={customStyles}>
         <Container>
-          <Grid container justifyContent="space-between" sx={customStyles} alignItems="center">
+          <Grid
+            direction={isMobile ? "column-reverse" : "row"}
+            container
+            justifyContent={isMobile ? "space-evenly" : "space-between"}
+            sx={customStyles}
+            alignItems="center"
+          >
             <Grid item>
               <Content direction="column">
-                <Typography variant="h2">
+                <Typography variant={isMobile ? "h3" : "h2"}>
                   Hi! This is <strong>Code Wizard</strong>...
                 </Typography>
                 <Typography variant="h4">I am a Senior Software Engineer</Typography>
                 <Typography variant="h6" fontWeight={200} paragraph>
-                  I create innovative Websites
+                  I create innovative Web Applications
                 </Typography>
                 <Link to="skills" smooth>
                   <Button size="large" variant="contained">
@@ -33,9 +40,9 @@ export default function Home() {
               </Content>
             </Grid>
             <Grid item>
-              <motion.div animate={{ opacity: 1, width: 240 }} initial={{ opacity: 0, width: 160 }}>
-                <img alt="Code Wizard" src="image/logotype.svg" />
-              </motion.div>
+              <Content>
+                <img alt="Code Wizard" src="image/logotype.svg" width={isMobile ? 100 : 240} />
+              </Content>
             </Grid>
           </Grid>
         </Container>

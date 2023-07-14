@@ -19,7 +19,7 @@ export type ProjectProps = {
   description: string
 }
 
-export type ContentProps = { direction?: GridDirection; children: ReactNode[] }
+export type ContentProps = { direction?: GridDirection; children: ReactNode | ReactNode[] }
 
 export type SectionProps = {
   children?: React.ReactNode

@@ -2,6 +2,7 @@ import { useRef } from "react"
 import { Grid } from "@mui/material"
 import { motion, Variants, useInView } from "framer-motion"
 import { ContentProps } from "config/types"
+import useMedia from "components/hooks"
 
 const container: Variants = {
   hidden: { opacity: 1, scale: 0 },
@@ -26,6 +27,7 @@ const item: Variants = {
 export default function Content({ direction, children }: ContentProps) {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
+  const { isMobile } = useMedia()
 
   return (
     <Grid ref={ref}>
@@ -35,14 +37,28 @@ export default function Content({ direction, children }: ContentProps) {
         animate={isInView && "visible"}
         style={{ listStyle: "none", padding: 0, margin: 0 }}
       >
-        <Grid container spacing={2} direction={direction} justifyContent="space-between">
-          {children.map((element, index) => (
+        <Grid
+          container
+          spacing={2}
+          direction={direction}
+          alignItems={isMobile ? "center" : "initial"}
+          justifyContent="space-between"
+        >
+          {Array.isArray(children) ? (
+            children.map((element, index) => (
+              <Grid item>
+                <motion.li key={index} variants={item} transition={{ duration: 0.4 }}>
+                  {element}
+                </motion.li>
+              </Grid>
+            ))
+          ) : (
             <Grid item>
-              <motion.li key={index} variants={item} transition={{ duration: 0.4 }}>
-                {element}
+              <motion.li variants={item} transition={{ duration: 0.4 }}>
+                {children}
               </motion.li>
             </Grid>
-          ))}
+          )}
         </Grid>
       </motion.ul>
     </Grid>

@@ -1,6 +1,7 @@
 import { Home, AutoAwesome, PermMedia, Link as LinkIcon } from "@mui/icons-material"
-import { Card, IconButton, Stack, Tooltip } from "@mui/material"
+import { Card, Fade, IconButton, Stack, Tooltip } from "@mui/material"
 import { Link } from "react-scroll"
+import useMedia from "./hooks"
 
 const elements = [
   { section: "home", icon: <Home /> },
@@ -10,6 +11,7 @@ const elements = [
 ]
 
 export default function FloatingBar() {
+  const { isMobile } = useMedia()
   const iconList = elements.map(({ section, icon }) => (
     <Link to={section} smooth>
       <Tooltip
@@ -23,18 +25,20 @@ export default function FloatingBar() {
   ))
 
   return (
-    <Card
-      sx={{
-        background: "var(--secondary)",
-        position: "fixed",
-        right: 20,
-        top: "50%",
-        transform: "translate(-50%, -50%)",
-      }}
-    >
-      <Stack p={1} spacing={1}>
-        {iconList}
-      </Stack>
-    </Card>
+    <Fade in={!isMobile}>
+      <Card
+        sx={{
+          background: "var(--secondary)",
+          position: "fixed",
+          right: 0,
+          top: "50%",
+          transform: "translate(-50%, -50%)",
+        }}
+      >
+        <Stack p={1} spacing={1}>
+          {iconList}
+        </Stack>
+      </Card>
+    </Fade>
   )
 }
