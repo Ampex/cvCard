@@ -2,7 +2,7 @@
   "name": "codewizard",
   "version": "2.0.0",
   "private": true,
-  "homepage": "https://ampex.github.io/codewizard",
+  "homepage": "https://ampex.github.io/cvCard",
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
