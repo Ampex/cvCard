@@ -36,7 +36,7 @@ export default function Section({
             background: short ? "none" : "white",
             transform: isInView
               ? "none"
-              : `translate${short ? "Y" : "X"}(${short ? "-60px" : right ? "200px" : "-200px"})`,
+              : `translate${short ? "Y" : "X"}(${short ? "10px" : right ? "200px" : "-200px"})`,
             opacity: isInView ? 1 : 0,
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
             p: 3,

@@ -3,7 +3,6 @@
 :root {
   --primary: #3f0962;
   --secondary: #fede5a;
-  scroll-behavior: smooth;
 }
 
 body {

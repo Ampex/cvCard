@@ -9,11 +9,13 @@ import { Chip, Typography } from "@mui/material"
 import Project from "components/Project"
 
 import CV from "components/CV"
+import FloatingBar from "components/FloatingBar"
 
 export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <MotionConfig transition={{ ease: "easeOut", duration: 1 }}>
+        <FloatingBar />
         <Home />
         <Section
           id="skills"
@@ -55,12 +57,12 @@ export default function App() {
             <Project
               title="HSBC M&S Loans"
               src="https://bank.marksandspencer.com/personal-loans/"
-              description="An application for borrowing money from bank."
+              description="An application for borrowing money from bank. Manufactured spending (MS) is the process of purchasing cash equivalents with a rewards earning credit card."
             />
             <Project
               title="HSBC M&S Cards"
               src="https://bank.marksandspencer.com/credit-card/"
-              description="An application for credit cards ordering."
+              description="An application for credit cards ordering. With an M&S Credit Card you will earn rewards points every time you shop."
             />
             <Project
               title="Ose"
@@ -80,7 +82,7 @@ export default function App() {
 
         <Section id="footer" short yellow>
           <Content>
-            <img alt="Code Wizard" src="images/logo-vertical.svg" width={160} />
+            <img alt="Code Wizard" src="image/logo-vertical.svg" width={160} />
             <Typography variant="caption">
               Copyright © 2023 <strong>Code Wizard</strong>. All rights reserved.
             </Typography>
