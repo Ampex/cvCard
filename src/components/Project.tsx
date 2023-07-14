@@ -10,7 +10,7 @@ export default function Project({ src, title, description }: ProjectProps) {
         <CardMedia
           component="img"
           height="140"
-          image={`/image/projects/${title.toLowerCase()}.png`}
+          image={`image/projects/${title.toLowerCase()}.png`}
           alt={title}
         />
         <CardContent>
