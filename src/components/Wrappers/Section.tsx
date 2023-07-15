@@ -30,7 +30,7 @@ export default function Section({
       alignContent="center"
       sx={short ? { background: yellow ? secondary.main : "inherit" } : { minHeight: "100vh" }}
     >
-      <Container sx={{ py: short ? 4 : isMobile ? 0 : 10 }} maxWidth={isMobile ? "md" : "lg"}>
+      <Container sx={{ py: short ? 4 : 10 }} maxWidth={isMobile ? "md" : "lg"}>
         <Card
           className={className}
           color="primary"

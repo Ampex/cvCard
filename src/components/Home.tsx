@@ -25,10 +25,12 @@ export default function Home() {
           >
             <Grid item>
               <Content direction="column">
-                <Typography variant={isMobile ? "h3" : "h2"}>
+                <Typography variant={isMobile ? "h4" : "h2"}>
                   Hi! This is <strong>Code Wizard</strong>...
                 </Typography>
-                <Typography variant="h4">I am a Senior Software Engineer</Typography>
+                <Typography variant={isMobile ? "h5" : "h4"}>
+                  I am a Senior Software Engineer
+                </Typography>
                 <Typography variant="h6" fontWeight={200} paragraph>
                   I create innovative Web Applications
                 </Typography>

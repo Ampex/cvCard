@@ -35,7 +35,7 @@ export default function ProjectList() {
       subheader="As a team member, I participated in building the following applications"
       right
     >
-      <Content direction={isMobile ? "column" : "row"}>
+      <Content direction={isMobile ? "column" : "row"} rowSpacing={6}>
         {projects.map(props => (
           <Project {...props} />
         ))}

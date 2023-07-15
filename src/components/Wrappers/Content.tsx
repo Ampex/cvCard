@@ -24,7 +24,7 @@ const item: Variants = {
   },
 }
 
-export default function Content({ direction, children }: ContentProps) {
+export default function Content({ direction, children, rowSpacing }: ContentProps) {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
   const { isMobile } = useMedia()
@@ -43,6 +43,7 @@ export default function Content({ direction, children }: ContentProps) {
           direction={direction}
           alignItems={isMobile ? "center" : "initial"}
           justifyContent="space-between"
+          rowSpacing={rowSpacing}
         >
           {Array.isArray(children) ? (
             children.map((element, index) => (

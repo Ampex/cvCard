@@ -1,4 +1,5 @@
-import { GridDirection } from "@mui/material"
+import { GridDirection, GridProps, GridTypeMap } from "@mui/material"
+import { CommonProps } from "@mui/material/OverridableComponent"
 import { ReactNode } from "react"
 
 type SectionConditionalProps = {
@@ -19,7 +20,11 @@ export type ProjectProps = {
   description: string
 }
 
-export type ContentProps = { direction?: GridDirection; children: ReactNode | ReactNode[] }
+export type ContentProps = {
+  children: ReactNode | ReactNode[]
+  direction?: GridDirection
+  rowSpacing?: GridTypeMap["props"]["rowSpacing"]
+}
 
 export type SectionProps = {
   children?: React.ReactNode
