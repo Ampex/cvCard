@@ -32,10 +32,15 @@ export default function CV() {
     startTransition(() => setOpen(prev => !prev))
     !isPending && reset()
   }
-
+  // type asd =
   const onSubmit = (data: FormData) =>
     emailjs
-      .send("service_tqc6hq3", "template_392nprf", data as any, "zAMVMo66_fS2NMF6H")
+      .send(
+        process.env.REACT_APP_EMAIL_SERVICE_ID!,
+        process.env.REACT_APP_EMAIL_TEMPLATE_ID!,
+        data as never,
+        process.env.REACT_APP_EMAIL_PUBLIC_KEY!
+      )
       .then(response => console.log("SUCCESS!", response.status, response.text))
       .catch(error => console.log("FAILED...", error))
       .finally(() =>
