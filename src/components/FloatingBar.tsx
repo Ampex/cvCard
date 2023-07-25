@@ -13,7 +13,7 @@ const elements = [
 export default function FloatingBar() {
   const { isMobile } = useMedia()
   const iconList = elements.map(({ section, icon }) => (
-    <Link to={section} smooth>
+    <Link to={section} smooth key={section}>
       <Tooltip
         PopperProps={{ popperOptions: { strategy: "fixed" } }}
         title={section.toUpperCase()}
@@ -28,7 +28,8 @@ export default function FloatingBar() {
     <Fade in={!isMobile}>
       <Card
         sx={{
-          background: "var(--secondary)",
+          background: ({ palette }) =>
+            palette.mode === "light" ? palette.secondary.main : "background.default",
           position: "fixed",
           right: 0,
           top: "50%",

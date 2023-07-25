@@ -47,8 +47,8 @@ export default function Content({ direction, children, rowSpacing }: ContentProp
         >
           {Array.isArray(children) ? (
             children.map((element, index) => (
-              <Grid item>
-                <motion.li key={index} variants={item} transition={{ duration: 0.4 }}>
+              <Grid item key={index}>
+                <motion.li variants={item} transition={{ duration: 0.4 }}>
                   {element}
                 </motion.li>
               </Grid>

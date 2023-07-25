@@ -15,6 +15,7 @@ export const theme = createTheme({
     },
   },
   palette: {
+    // mode: "dark",
     primary: {
       main: primary,
     },
@@ -39,13 +40,6 @@ export const theme = createTheme({
         title: {
           fontSize: 36,
           fontWeight: 700,
-        },
-      },
-    },
-    MuiSwitch: {
-      styleOverrides: {
-        switchBase: {
-          color: secondary,
         },
       },
     },

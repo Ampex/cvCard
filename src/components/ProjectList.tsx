@@ -37,7 +37,7 @@ export default function ProjectList() {
     >
       <Content direction={isMobile ? "column" : "row"} rowSpacing={6}>
         {projects.map(props => (
-          <Project {...props} />
+          <Project key={props.src} {...props} />
         ))}
       </Content>
     </Section>

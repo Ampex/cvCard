@@ -8,14 +8,12 @@
 body {
   box-sizing: border-box;
   font-family: "Baloo 2";
-  color: var(--primary);
   margin: 0;
   padding: 0;
 }
 
 section:nth-of-type(odd) {
   background: #f6f6f6;
-  /* overflow: hidden; */
 }
 
 .box-shadow {

@@ -1,5 +1,4 @@
-import { GridDirection, GridProps, GridTypeMap } from "@mui/material"
-import { CommonProps } from "@mui/material/OverridableComponent"
+import { GridDirection, GridTypeMap } from "@mui/material"
 import { ReactNode } from "react"
 
 type SectionConditionalProps = {
@@ -29,3 +28,15 @@ export type ContentProps = {
 export type SectionProps = {
   children?: React.ReactNode
 } & SectionConditionalProps
+
+export type CustomInputFields = {
+  "Full Name": string
+  "Reply To": string
+  Description: string
+}
+// export type CustomInputProps = {
+//   name: keyof CustomInputFields
+//   placeholder: string
+//   type?: string
+//   multiline?: boolean
+// }
